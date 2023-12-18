@@ -8,42 +8,6 @@ menu.onclick = () =>{
 }
 
 
-//Get the menu and navbar elements
-// let menu = document.querySelector('#menu-bars');
-// let navbar = document.querySelector('.navbar');
-
-// // Add a click event listener to the menu
-// menu.addEventListener('click', () => {
-//     // Toggle the 'fa-times' class on the menu icon
-//     menu.classList.toggle('fa-times');
-    
-//     // Toggle the 'active' class on the navbar
-//     navbar.classList.toggle('active');
-// });
-
-
-// const section=document.querySelectorAll("section");
-// const navLinks=document.querySelectorAll("header .navbar a");
-
-// window.addEventListener('scroll', ()=> {
-
-//     let current='';
-//     section.forEach(section=> {
-//         const sectionTop=section.offsetTop - 100;
-//         const sectionHeight=section.cleintHeight;
-//         if(pageYOffset>=sectionTop){
-//             current=section.getAttribute('id')
-//         }
-//     })
-//     navLinks.forEach(li=>{
-//         li.classList.remove('active')
-//         if(li.classList.contains(current)){
-//             li.classList.add('active')
-
-//         }
-//     })
-// })
-
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("header .navbar a");
 
@@ -77,22 +41,7 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 
-//     section.forEach(sec =>{
 
-        
-//         let bottom = window.scrollY;
-//         let offset=sec.offsetTop - 150;
-//         // console.log(offset)
-//         let height=sec.offsetHeight;
-//         let id=sec.getAttribute('id');
-
-//         if(bottom => offset && top < offset + height){
-//             navLinks.forEach(links =>{
-//                 links.classList.remove('active');
-//                 document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
-//             });
-//         };
-//     });
 }
 
 document.querySelector("#search-icon").onclick = () =>{
@@ -103,19 +52,7 @@ document.querySelector("#close").onclick = () =>{
     document.querySelector("#search-form").classList.remove("active");
 }
 
-// var swiper = new Swiper(".home-slider", {
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     autoplay: {
-//       delay: 5000,
-//       disableOnInteraction: false,
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//    loop:true,
-//   });
+
 
 const swiper = {
     init: function () {
@@ -145,29 +82,7 @@ swiper.init();
 
 
 
-//   var swiper = new Swiper(".team-slider", {
-//     spaceBetween: 20,
-//     centeredSlides: true,
-//     autoplay: {
-//       delay: 3000,
-//       disableOnInteraction: false,
-//     },
-//    loop:true,
-//    breakpoints:{
-//     0:{
-//     slidesPerView: 1 ,
-//     },
-//     640:{
-//         slidesPerView: 2 ,
-//     },
-//     768:{
-//         slidesPerView: 2 ,
-//     },
-//     1024:{
-//         slidesPerView: 3 ,
-//     },
-//    }
-//   });
+
 
 
 function moveTo(section, tag) {
